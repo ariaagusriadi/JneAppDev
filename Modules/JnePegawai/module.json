@@ -1,0 +1,13 @@
+{
+    "name": "JnePegawai",
+    "alias": "jnepegawai",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\JnePegawai\\Providers\\JnePegawaiServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

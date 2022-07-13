@@ -1,0 +1,13 @@
+{
+    "name": "JneSurat",
+    "alias": "jnesurat",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\JneSurat\\Providers\\JneSuratServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

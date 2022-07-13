@@ -1,0 +1,13 @@
+{
+    "name": "JneQr",
+    "alias": "jneqr",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\JneQr\\Providers\\JneQrServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

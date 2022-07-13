@@ -1,0 +1,13 @@
+{
+    "name": "JnePermohonan",
+    "alias": "jnepermohonan",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\JnePermohonan\\Providers\\JnePermohonanServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

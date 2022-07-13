@@ -1,0 +1,13 @@
+{
+    "name": "JneAdmin",
+    "alias": "jneadmin",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\JneAdmin\\Providers\\JneAdminServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

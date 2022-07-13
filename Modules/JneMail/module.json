@@ -1,0 +1,13 @@
+{
+    "name": "JneMail",
+    "alias": "jnemail",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\JneMail\\Providers\\JneMailServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,11 @@
+{
+    "JneAdmin": true,
+    "JneSurat": true,
+    "List": true,
+    "JneMail": true,
+    "JneQr": true,
+    "JnePegawai": true,
+    "JneArchives": true,
+    "JneLembur": true,
+    "JnePermohonan": true
+}

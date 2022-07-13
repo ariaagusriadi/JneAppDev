@@ -1,0 +1,13 @@
+{
+    "name": "JneArchives",
+    "alias": "jnearchives",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\JneArchives\\Providers\\JneArchivesServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

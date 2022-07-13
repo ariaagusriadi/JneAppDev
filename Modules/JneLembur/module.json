@@ -1,0 +1,13 @@
+{
+    "name": "JneLembur",
+    "alias": "jnelembur",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\JneLembur\\Providers\\JneLemburServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
