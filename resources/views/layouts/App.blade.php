@@ -10,13 +10,13 @@
     <link rel="icon" type="image/png" sizes="16x16"
         href="{{ url('dashboard') }}/assets/img/jne-express-new-2016-logo-375E58A33D-seeklogo.com.png">
 
-    <link href="{{ url('asset') }}/vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url('asset') }}/vendor/chartist/css/chartist.min.css">
+    <link href="{{ url('public/asset') }}/vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url('public/asset') }}/vendor/chartist/css/chartist.min.css">
     <!-- Vectormap -->
-    <link href="{{ url('asset') }}/vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
-    <link href="{{ url('asset') }}/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
-    <link href="{{ url('asset') }}/css/style.css" rel="stylesheet">
-    <link href="{{ url('asset') }}/vendor/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="{{ url('public/asset') }}/vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
+    <link href="{{ url('public/asset') }}/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="{{ url('public/asset') }}/css/style.css" rel="stylesheet">
+    <link href="{{ url('public/asset') }}/vendor/owl-carousel/owl.carousel.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8049cde48d.js" crossorigin="anonymous"></script>
     @stack('style')
 
@@ -52,21 +52,21 @@
 
 
     <!-- Required vendors -->
-    <script src="{{ url('asset') }}/vendor/global/global.min.js"></script>
-    <script src="{{ url('asset') }}/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-    <script src="{{ url('asset') }}/vendor/chart.js/Chart.bundle.min.js"></script>
-    <script src="{{ url('asset') }}/js/custom.min.js"></script>
-    <script src="{{ url('asset') }}/js/deznav-init.js"></script>
-    <script src="{{ url('asset') }}/vendor/owl-carousel/owl.carousel.js"></script>
+    <script src="{{ url('public/asset') }}/vendor/global/global.min.js"></script>
+    <script src="{{ url('public/asset') }}/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="{{ url('public/asset') }}/vendor/chart.js/Chart.bundle.min.js"></script>
+    <script src="{{ url('public/asset') }}/js/custom.min.js"></script>
+    <script src="{{ url('public/asset') }}/js/deznav-init.js"></script>
+    <script src="{{ url('public/asset') }}/vendor/owl-carousel/owl.carousel.js"></script>
 
     <!-- Chart piety plugin files -->
-    <script src="{{ url('asset') }}/vendor/peity/jquery.peity.min.js"></script>
+    <script src="{{ url('public/asset') }}/vendor/peity/jquery.peity.min.js"></script>
 
     <!-- Apex Chart -->
-    <script src="{{ url('asset') }}/vendor/apexchart/apexchart.js"></script>
+    <script src="{{ url('public/asset') }}/vendor/apexchart/apexchart.js"></script>
 
     <!-- Dashboard 1 -->
-    <script src="{{ url('asset') }}/js/dashboard/dashboard-1.js"></script>
+    <script src="{{ url('public/asset') }}/js/dashboard/dashboard-1.js"></script>
 
     @stack('script')
 
