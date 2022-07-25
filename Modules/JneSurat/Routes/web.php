@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::middleware('auth')->group(function () {
-    Route::redirect('jnesurat/unit','jnesurat/unit-kerja/pengajuan-baru');
-    Route::redirect('JneSurat/tatausaha','jnesurat/tata-usaha/pengajuan-masuk');
-    Route::redirect('JneSurat/ceo','jnesurat/ceo/pengajuan-masuk');
+    Route::get('jnesurat/unit',fn () => redirect('jnesurat/unit-kerja/pengajuan-baru'));
+    Route::get('JneSurat/tatausaha',fn () => redirect('jnesurat/tata-usaha/pengajuan-masuk'));
+    Route::get('JneSurat/ceo',fn () => redirect('jnesurat/ceo/pengajuan-masuk'));
     Route::prefix('jnesurat')->group(function () {
         include '_/unitkerja.php';
         include '_/tatausaha.php';
