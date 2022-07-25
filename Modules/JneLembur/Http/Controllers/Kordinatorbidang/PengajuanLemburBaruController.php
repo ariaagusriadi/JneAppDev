@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\JneLembur\Http\Controllers\kordinatorbidang;
+namespace Modules\JneLembur\Http\Controllers\Kordinatorbidang;
 
 
 use Illuminate\Support\Str;
