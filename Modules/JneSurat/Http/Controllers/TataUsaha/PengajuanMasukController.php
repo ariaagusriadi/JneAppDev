@@ -60,7 +60,8 @@ class PengajuanMasukController extends Controller
             'keterangan' => request('keterangan_surat'),
         ];
         $ttd = 'Uti ruslan';
-        $output_file = $pengajuan_masuk->nama_pengajuan;
+        $nama = $pengajuan_masuk->nama_pengajuan;
+        $output_file = "$nama.png";
         $filename = "$pengajuan_masuk->nama_pengajuan .docx";
 
         // call function
@@ -121,7 +122,8 @@ class PengajuanMasukController extends Controller
 
 
         $result = $writer->write($qrCode, $logo, $label);
-        $result->saveToFile(public_path("JneSurat/qr/$output_file.png"));
+        // $result->saveToFile(public_path("JneSurat/qr/$output_file.png"));
+        $result->saveToFile(public_path('JneSurat/qr/'), $output_file);
 
         return "JneSurat/qr/$output_file.png";
     }
