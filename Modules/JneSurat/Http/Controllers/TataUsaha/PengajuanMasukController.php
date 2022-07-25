@@ -60,8 +60,11 @@ class PengajuanMasukController extends Controller
             'keterangan' => request('keterangan_surat'),
         ];
         $ttd = 'Uti ruslan';
-        $output_file = "$pengajuan_masuk->nama_pengajuan.png";
-        $filename = "$pengajuan_masuk->nama_pengajuan.docx";
+        // $output_file = "$pengajuan_masuk->nama_pengajuan.png";
+
+        $output_file = $pengajuan_masuk->nama_pengajuan . ".png";
+        // $filename = "$pengajuan_masuk->nama_pengajuan.docx";
+        $filename = $pengajuan_masuk->nama_pengajuan . ".docx";
 
         // call function
         $qrlogo = $this->generateQrcode($output_file, $data, $ttd);
