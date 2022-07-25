@@ -123,7 +123,7 @@ class PengajuanMasukController extends Controller
 
         $result = $writer->write($qrCode, $logo, $label);
         // $result->saveToFile(public_path("JneSurat/qr/$output_file.png"));
-        $result->saveToFile(public_path('JneSurat/qr/'), $output_file);
+        $result->saveToFile(public_path('JneSurat/qr'), $output_file);
 
         return "JneSurat/qr/$output_file.png";
     }
