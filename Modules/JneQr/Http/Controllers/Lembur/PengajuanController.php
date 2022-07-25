@@ -28,7 +28,7 @@ class PengajuanController extends Controller
             'tanggal' => 'required',
         ]);
 
-        $logo =  public_path('/asset/logo/jne.png');
+        $logo =  public_path('asset/logo/jne.png');
         $data = "
         Memberikan Pengesahan Tanda tangan pengajuan lembur ke pada  :
         nama pegawai : " . request('nama') . "
@@ -72,7 +72,7 @@ class PengajuanController extends Controller
             'barang' => 'required',
         ]);
 
-        $logo =  public_path('/asset/logo/jne.png');
+        $logo =  public_path('asset/logo/jne.png');
         $data = "
         Memberikan Pengesahan Tanda tangan pengajuan barang ke pada  :
         nama pegawai : " . request('nama') . "

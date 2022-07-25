@@ -26,7 +26,7 @@ class PersetujuanController extends Controller
             'tanggal_lembur' => 'required',
         ]);
 
-        $logo =  public_path('/asset/logo/jne.png');
+        $logo =  public_path('asset/logo/jne.png');
         $data = "
         Memberikan Pengesahan Tanda tangan Persetujuan lembur  pada  :
         tanggal spl : " . request('tanggal_spl') . "
@@ -68,7 +68,7 @@ class PersetujuanController extends Controller
         ]);
 
 
-        $logo =  public_path('/asset/logo/jne.png');
+        $logo =  public_path('asset/logo/jne.png');
         $data = "
         Memberikan Pengesahan Tanda tangan Persetujuan barang pada  :
         tanggal spb : " . request('tanggal_spb') . "
