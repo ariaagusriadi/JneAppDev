@@ -15,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::middleware('auth')->group(function () {
-    Route::redirect('JneLembur/kordinator-bidang', '/jnelembur/kordinator-bidang/pengajuan-lembur-baru');
-    Route::redirect('JneLembur/junior-supervisor', '/jnelembur/junior-supervisor/pengajuan-lembur-masuk');
+    Route::redirect('JneLembur/kordinator-bidang', 'jnelembur/kordinator-bidang/pengajuan-lembur-baru');
+    Route::redirect('JneLembur/junior-supervisor', 'jnelembur/junior-supervisor/pengajuan-lembur-masuk');
     Route::redirect('jnelembur/hrd', '/jnelembur/hrd/laporan-lembur');
     Route::prefix('jnelembur')->group(function () {
         include '_/kordinatorbidang.php';

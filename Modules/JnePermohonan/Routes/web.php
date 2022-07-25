@@ -20,7 +20,7 @@ Route::prefix('jnepermohonan')->group(function() {
 
 
 Route::middleware('auth')->group(function () {
-    Route::redirect('/JnePermohonan/devisi','/jnepermohonan/devisi/pengajuan-baru');
+    Route::redirect('/JnePermohonan/devisi','jnepermohonan/devisi/pengajuan-baru');
     Route::prefix('jnepermohonan')->group(function () {
         include '_/devisi.php';
     });

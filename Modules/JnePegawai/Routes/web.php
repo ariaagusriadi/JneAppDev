@@ -16,7 +16,7 @@ use Modules\JnePegawai\Http\Controllers\JnePegawaiController;
 
 
 Route::middleware('auth')->group(function () {
-    Route::redirect('/jne/pegawai','/jnepegawai/dashboard');
+    Route::redirect('/jne/pegawai','jnepegawai/dashboard');
     Route::prefix('jnepegawai')->middleware('can:Jne-pegawai')->group(function() {
         Route::get('dashboard',[ JnePegawaiController::class,'dashboard']);
         Route::get('setting',[ JnePegawaiController::class,'setting']);

@@ -15,12 +15,12 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::middleware('auth')->group(function () {
-    Route::redirect('JneMail/unit','/jnemail/unit-kerja/send-mail');
-    Route::redirect('JneMail/tatausaha','/jnemail/tata-usaha/inbox');
-    Route::redirect('JneMail/Jr-SuperVisior-Devisi-Operasional','/jnemail/jr-supervisior-devisi-operasional/inbox-mail');
-    Route::redirect('JneMail/Jr-SuperVisior-Devisi-Keuangan','/jnemail/jr-supervisior-devisi-keuangan/inbox-mail');
-    Route::redirect('JneMail/kepalacabang','/jnemail/kepala-cabang/inbox-mail');
-    Route::redirect('JneMail/custumerservice','/jnemail/custumer-service/inbox-mail');
+    Route::redirect('JneMail/unit','jnemail/unit-kerja/send-mail');
+    Route::redirect('JneMail/tatausaha','jnemail/tata-usaha/inbox');
+    Route::redirect('JneMail/Jr-SuperVisior-Devisi-Operasional','jnemail/jr-supervisior-devisi-operasional/inbox-mail');
+    Route::redirect('JneMail/Jr-SuperVisior-Devisi-Keuangan','jnemail/jr-supervisior-devisi-keuangan/inbox-mail');
+    Route::redirect('JneMail/kepalacabang','jnemail/kepala-cabang/inbox-mail');
+    Route::redirect('JneMail/custumerservice','jnemail/custumer-service/inbox-mail');
     Route::prefix('jnemail')->group(function () {
         include '_/unitkerja.php';
         include '_/tatausaha.php';

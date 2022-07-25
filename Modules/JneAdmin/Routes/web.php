@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware('auth')->group(function () {
-    Route::redirect('jne/admin','/jneadmin/pegawai');
+    Route::redirect('jne/admin','jneadmin/pegawai');
     Route::prefix('jneadmin')->middleware('can:JneAdmin-admin')->group(function () {
         include "_/pegawai.php";
         include "_/unitkerja.php";

@@ -20,8 +20,8 @@ Route::prefix('jnearchives')->group(function() {
 
 
 Route::middleware('auth')->group(function () {
-    Route::redirect('JneArchives/tatausaha','/jnearchives/tata-usaha/format-pengajuan');
-    Route::redirect('JneArchives/pegawai','/jnearchives/pegawai/format-pengajuan');
+    Route::redirect('JneArchives/tatausaha','jnearchives/tata-usaha/format-pengajuan');
+    Route::redirect('JneArchives/pegawai','jnearchives/pegawai/format-pengajuan');
     Route::prefix('jnearchives')->group(function () {
         include '_/tatausaha.php';
         include '_/pegawai.php';
