@@ -125,7 +125,7 @@ class PengajuanMasukController extends Controller
         // $result->saveToFile(public_path("JneSurat/qr/$output_file.png"));
         $result->saveToFile(public_path('JneSurat/qr'), $output_file);
 
-        return "JneSurat/qr/$output_file.png";
+        return "JneSurat/qr/$output_file";
     }
 
     function getDocument($filepath, $filename,  $qrlogo)
