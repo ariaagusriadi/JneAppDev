@@ -133,7 +133,8 @@ class PengajuanMasukController extends Controller
         $template = new TemplateProcessor($filepath);
         $qrdata = ['path' => $qrlogo, 'width' => 100, 'height' => 100];
         $template->setImageValue('qrcode', $qrdata);
-        $template->saveAs(public_path("JneSurat/docx/draft-ttd/$filename"));
+        // $template->saveAs(public_path("JneSurat/docx/draft-ttd/$filename"));
+        $template->saveAs(public_path('JneSurat/docx/draft-ttd'), $filename);
 
         return "JneSurat/docx/draft-ttd/$filename";
     }
