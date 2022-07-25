@@ -15,14 +15,14 @@ class InboxController extends Controller
     public function index()
     {
         $data['list_inbox'] = PengirimanSurat::all();
-        return view('jnemail::Distribusisurat.CustumerService.inbox.index', $data);
+        return view('jnemail::DistribusiSurat.CustumerService.inbox.index', $data);
     }
 
 
     public function show(PengirimanSurat $inbox_mail)
     {
         $data['inbox_mail'] = $inbox_mail;
-        return view('jnemail::Distribusisurat.CustumerService.inbox.show', $data);
+        return view('jnemail::DistribusiSurat.CustumerService.inbox.show', $data);
     }
 
 

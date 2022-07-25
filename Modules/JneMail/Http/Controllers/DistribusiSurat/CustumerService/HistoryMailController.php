@@ -13,14 +13,14 @@ class HistoryMailController extends Controller
     public function index()
     {
         $data['list_history'] = PengirimanSurat::all();
-        return view('jnemail::Distribusisurat.custumerservice.history-mail.index',$data);
+        return view('jnemail::DistribusiSurat.custumerservice.history-mail.index',$data);
     }
 
 
     public function show(PengirimanSurat $history_mail)
     {
         $data['history_mail'] = $history_mail;
-        return view('jnemail::Distribusisurat.custumerservice.history-mail.show',$data);
+        return view('jnemail::DistribusiSurat.custumerservice.history-mail.show',$data);
     }
 
 

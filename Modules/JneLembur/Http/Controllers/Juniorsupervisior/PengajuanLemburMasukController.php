@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\JneLembur\Http\Controllers\juniorsupervisior;
+namespace Modules\JneLembur\Http\Controllers\Juniorsupervisior;
 
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
@@ -8,7 +8,7 @@ use Illuminate\Routing\Controller;
 use Illuminate\Contracts\Support\Renderable;
 use Modules\JneLembur\Entities\pengajuanlembur;
 use Modules\JneLembur\Entities\logpengajuanlembur;
-use Modules\JneLembur\Http\Requests\juniorsupervisior\UpdatePengajuanRequest;
+use Modules\JneLembur\Http\Requests\Juniorsupervisior\UpdatePengajuanRequest;
 use Illuminate\Support\Facades\File;
 
 

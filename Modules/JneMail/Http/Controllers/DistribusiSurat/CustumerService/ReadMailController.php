@@ -13,12 +13,12 @@ class ReadMailController extends Controller
     public function index()
     {
         $data['list_read'] = PengirimanSurat::all();
-        return view('jnemail::Distribusisurat.CustumerService.read-mail.index', $data);
+        return view('jnemail::DistribusiSurat.CustumerService.read-mail.index', $data);
     }
 
     public function show(PengirimanSurat $read_mail)
     {
         $data['read_mail'] = $read_mail;
-        return view('jnemail::Distribusisurat.CustumerService.read-mail.show', $data);
+        return view('jnemail::DistribusiSurat.CustumerService.read-mail.show', $data);
     }
 }

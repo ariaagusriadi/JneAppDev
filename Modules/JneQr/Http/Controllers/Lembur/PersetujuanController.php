@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\JneQr\Http\Controllers\lembur;
+namespace Modules\JneQr\Http\Controllers\Lembur;
 
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;

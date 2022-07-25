@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Modules\JneLembur\Http\Controllers\hrd\LaporanLemburController;
-use Modules\JneLembur\Http\Controllers\hrd\LaporanSelesaiController;
+use Modules\JneLembur\Http\Controllers\Hrd\LaporanLemburController;
+use Modules\JneLembur\Http\Controllers\Hrd\LaporanSelesaiController;
 
 Route::prefix('hrd')->middleware('can:JneLembur-HRD')->group(function(){
     Route::get('laporan-lembur',[ LaporanLemburController::class,'index']);

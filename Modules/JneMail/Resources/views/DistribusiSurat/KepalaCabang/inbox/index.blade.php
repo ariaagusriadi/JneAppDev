@@ -1,5 +1,4 @@
-@extends('jnemail::_menu.DistribusiSurat.kepalacabang.index')
-
+@extends('jnemail::_menu.DistribusiSurat.KepalaCabang.index')
 
 @section('content')
     <h1>Inbox Surat</h1>

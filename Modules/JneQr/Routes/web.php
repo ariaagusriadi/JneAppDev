@@ -2,8 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use Modules\JneQr\Http\Controllers\JneQrController;
-use Modules\JneQr\Http\Controllers\lembur\PengajuanController;
-use Modules\JneQr\Http\Controllers\lembur\PersetujuanController;
+use Modules\JneQr\Http\Controllers\Lembur\PengajuanController;
+use Modules\JneQr\Http\Controllers\Lembur\PersetujuanController;
 
 /*
 |--------------------------------------------------------------------------

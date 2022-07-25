@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Modules\JneLembur\Http\Controllers\kordinatorbidang\PengajuanLemburAktifController;
-use Modules\JneLembur\Http\Controllers\kordinatorbidang\PengajuanLemburBaruController;
+use Modules\JneLembur\Http\Controllers\Kordinatorbidang\PengajuanLemburAktifController;
+use Modules\JneLembur\Http\Controllers\Kordinatorbidang\PengajuanLemburBaruController;
 use Modules\JneLembur\Http\Controllers\KordinatorBidang\PengajuanLemburSelesaiController;
 
 Route::prefix('kordinator-bidang')->middleware('can:JneLembur-kordinator-bidang')->group(function(){

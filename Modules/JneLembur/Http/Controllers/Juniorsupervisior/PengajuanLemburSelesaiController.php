@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\JneLembur\Http\Controllers\juniorsupervisior;
+namespace Modules\JneLembur\Http\Controllers\Juniorsupervisior;
 
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;

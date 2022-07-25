@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Modules\JneLembur\Http\Controllers\juniorsupervisior\PengajuanLemburMasukController;
-use Modules\JneLembur\Http\Controllers\juniorsupervisior\PengajuanLemburSelesaiController;
+use Modules\JneLembur\Http\Controllers\Juniorsupervisior\PengajuanLemburMasukController;
+use Modules\JneLembur\Http\Controllers\Juniorsupervisior\PengajuanLemburSelesaiController;
 
 Route::prefix('junior-supervisor')->middleware('can:JneLembur-junior-supervisor')->group(function () {
     Route::get('pengajuan-lembur-masuk', [PengajuanLemburMasukController::class, 'index']);

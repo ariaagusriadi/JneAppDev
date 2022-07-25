@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\JneLembur\Http\Controllers\hrd;
+namespace Modules\JneLembur\Http\Controllers\Hrd;
 
 use DateTime;
 use Illuminate\Support\Str;
