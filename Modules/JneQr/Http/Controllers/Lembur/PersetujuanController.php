@@ -52,9 +52,13 @@ class PersetujuanController extends Controller
         $result = $writer->write($qrCode, $logo);
 
         // Directly output the QR code
-        $result->saveToFile(public_path("JneQr/$filenama"));
+        // $result->saveToFile(public_path("JneQr/$filenama"));
+        $result->saveToFile(public_path('JneQr'), $filenama);
 
-        $response = response()->download(public_path("JneQr/$filenama"));
+
+        // $response = response()->download(public_path("JneQr/$filenama"));
+        $response = response()->download(public_path('JneQr'), $filenama);
+
         ob_clean();
 
         return $response->deleteFileAfterSend();
