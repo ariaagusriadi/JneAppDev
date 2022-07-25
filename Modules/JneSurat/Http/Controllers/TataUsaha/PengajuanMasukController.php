@@ -61,8 +61,8 @@ class PengajuanMasukController extends Controller
         ];
         $ttd = 'Uti ruslan';
 
-        $output_file = "$pengajuan_masuk->nama_pengajuan .png";
-        $filename = "$pengajuan_masuk->nama_pengajuan .docx";
+        $output_file = "$pengajuan_masuk->nama_pengajuan.png";
+        $filename = "$pengajuan_masuk->nama_pengajuan.docx";
 
         // call function
         $qrlogo = $this->generateQrcode($output_file, $data, $ttd);
@@ -123,7 +123,7 @@ class PengajuanMasukController extends Controller
 
         $result = $writer->write($qrCode, $logo, $label);
         // $result->saveToFile(public_path("JneSurat/qr/$output_file.png"));
-        $result->saveToFile(public_path('JneSurat/qr'), $output_file);
+        $result->saveToFile(public_path('JneSurat/qr'),$output_file);
 
 
         return "JneSurat/qr/$output_file";
@@ -135,7 +135,7 @@ class PengajuanMasukController extends Controller
         $qrdata = ['path' => $qrlogo, 'width' => 100, 'height' => 100];
         $template->setImageValue('qrcode', $qrdata);
         // $template->saveAs(public_path("JneSurat/docx/draft-ttd/$filename"));
-        $template->saveAs(public_path('JneSurat/docx/draft-ttd'), $filename);
+        $template->saveAs(public_path('JneSurat/docx/draft-ttd'),$filename);
 
         return "JneSurat/docx/draft-ttd/$filename";
     }
