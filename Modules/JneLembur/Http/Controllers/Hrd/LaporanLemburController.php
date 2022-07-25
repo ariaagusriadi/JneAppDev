@@ -8,25 +8,25 @@ use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\File;
 use Illuminate\Contracts\Support\Renderable;
-use Modules\JneLembur\Entities\pengajuanlembur;
-use Modules\JneLembur\Entities\logpengajuanlembur;
+use Modules\JneLembur\Entities\Pengajuanlembur;
+use Modules\JneLembur\Entities\logPengajuanlembur;
 
 class LaporanLemburController extends Controller
 {
 
     public function index()
     {
-        $data['list_laporan'] = pengajuanlembur::all();
+        $data['list_laporan'] = Pengajuanlembur::all();
         return view('jnelembur::hrd.laporan-lembur.index', $data);
     }
 
-    public function show(pengajuanlembur $laporan)
+    public function show(Pengajuanlembur $laporan)
     {
         $data['laporan'] = $laporan;
         return view('jnelembur::hrd.laporan-lembur.show', $data);
     }
 
-    public function update(pengajuanlembur $laporan)
+    public function update(Pengajuanlembur $laporan)
     {
         $laporan->status = 441;
         $laporan->keterangan = 'pengajuan laporan di terima hrd';

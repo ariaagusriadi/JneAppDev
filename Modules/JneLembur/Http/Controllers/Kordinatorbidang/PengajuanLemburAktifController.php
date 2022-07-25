@@ -8,7 +8,7 @@ use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\File;
 use Illuminate\Contracts\Support\Renderable;
 use Modules\JneLembur\Entities\logpengajuanlembur;
-use Modules\JneLembur\Entities\pengajuanlembur;
+use Modules\JneLembur\Entities\Pengajuanlembur;
 
 class PengajuanLemburAktifController extends Controller
 {
@@ -20,14 +20,14 @@ class PengajuanLemburAktifController extends Controller
         return view('jnelembur::kordinator-bidang.pengajuan-aktif.index', $data);
     }
 
-    public function show(pengajuanlembur $lembur)
+    public function show(Pengajuanlembur $lembur)
     {
         $data['lembur'] = $lembur;
         return view('jnelembur::kordinator-bidang.pengajuan-aktif.show', $data);
     }
 
 
-    public function update(Request $request, pengajuanlembur $lembur)
+    public function update(Request $request, Pengajuanlembur $lembur)
     {
         $lembur->status = 331;
         $lembur->keterangan = 'pengajuan lembur di ttd, dan di laporkan ke hrd';

@@ -6,7 +6,7 @@ namespace Modules\JneLembur\Http\Controllers\Kordinatorbidang;
 use Illuminate\Support\Str;
 use Illuminate\Routing\Controller;
 use Illuminate\Contracts\Support\Renderable;
-use Modules\JneLembur\Entities\pengajuanlembur;
+use Modules\JneLembur\Entities\Pengajuanlembur;
 use Modules\JneLembur\Entities\logpengajuanlembur;
 use Illuminate\Http\Request;
 use Modules\JneLembur\Http\Requests\kordinatorbidang\StorePengajuanRequest;
@@ -29,7 +29,7 @@ class PengajuanLemburBaruController extends Controller
 
     public function store(StorePengajuanRequest $request)
     {
-        $pengajuanlembur = new pengajuanlembur();
+        $pengajuanlembur = new Pengajuanlembur();
         $pengajuanlembur->id_pegawai = auth()->user()->id;
         $pengajuanlembur->id_unitkerja = auth()->user()->unitkerja->id;
         $pengajuanlembur->status = 111;
@@ -84,13 +84,13 @@ class PengajuanLemburBaruController extends Controller
 
 
 
-    public function show(pengajuanlembur $pengajuan_lembur_baru)
+    public function show(Pengajuanlembur $pengajuan_lembur_baru)
     {
         $data['pengajuan_lembur_baru'] = $pengajuan_lembur_baru;
         return view('jnelembur::kordinator-bidang.pengajuan-lembur.show', $data);
     }
 
-    public function edit(pengajuanlembur $pengajuan_lembur_baru)
+    public function edit(Pengajuanlembur $pengajuan_lembur_baru)
     {
         $data['pengajuan_lembur_baru'] = $pengajuan_lembur_baru;
         return view('jnelembur::kordinator-bidang.pengajuan-lembur.edit', $data);
@@ -153,7 +153,7 @@ class PengajuanLemburBaruController extends Controller
         return redirect('jnelembur/kordinator-bidang/pengajuan-lembur-baru')->with('warning', 'berhasil edit pengajuan lembur baru');
     }
 
-    public function destroy(pengajuanlembur $pengajuan_lembur_baru)
+    public function destroy(Pengajuanlembur $pengajuan_lembur_baru)
     {
         $pengajuan_lembur_baru->delete();
         $pengajuan_lembur_baru->loglembur()->delete();

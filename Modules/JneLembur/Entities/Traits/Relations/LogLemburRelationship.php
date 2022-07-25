@@ -5,7 +5,7 @@ namespace Modules\JneLembur\Entities\Traits\Relations;
 
 use Modules\JneAdmin\Entities\Pegawai;
 use Modules\JneAdmin\Entities\UnitKerja;
-use Modules\JneLembur\Entities\pengajuanlembur;
+use Modules\JneLembur\Entities\Pengajuanlembur;
 use Modules\JneMail\Entities\LogPengirimanSurat;
 
 trait LogLemburRelationship
@@ -20,6 +20,6 @@ trait LogLemburRelationship
     }
     public function lembur()
     {
-        return $this->belongsTo(pengajuanlembur::class , 'id_pengajuan');
+        return $this->belongsTo(Pengajuanlembur::class , 'id_pengajuan');
     }
 }

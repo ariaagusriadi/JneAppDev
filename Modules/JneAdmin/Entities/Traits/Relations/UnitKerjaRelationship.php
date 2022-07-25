@@ -4,7 +4,7 @@
 namespace Modules\JneAdmin\Entities\Traits\Relations;
 
 use Modules\JneAdmin\Entities\Pegawai;
-use Modules\JneLembur\Entities\pengajuanlembur;
+use Modules\JneLembur\Entities\Pengajuanlembur;
 use Modules\JneMail\Entities\PengirimanSurat;
 use Modules\JneSurat\Entities\Pengajuan;
 
@@ -25,6 +25,6 @@ trait UnitKerjaRelationship
     }
     public function lembur()
     {
-        return $this->hasMany(pengajuanlembur::class, 'id_unitkerja');
+        return $this->hasMany(Pengajuanlembur::class, 'id_unitkerja');
     }
 }

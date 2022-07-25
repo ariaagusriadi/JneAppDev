@@ -6,7 +6,7 @@ use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Contracts\Support\Renderable;
-use Modules\JneLembur\Entities\pengajuanlembur;
+use Modules\JneLembur\Entities\Pengajuanlembur;
 use Modules\JneLembur\Entities\logpengajuanlembur;
 use Modules\JneLembur\Http\Requests\Juniorsupervisior\UpdatePengajuanRequest;
 use Illuminate\Support\Facades\File;
@@ -17,19 +17,19 @@ class PengajuanLemburMasukController extends Controller
 
     public function index()
     {
-        $data['list_masuk'] = pengajuanlembur::all();
+        $data['list_masuk'] = Pengajuanlembur::all();
         return view('jnelembur::junior-supervisior.pengajuan-masuk.index', $data);
     }
 
 
-    public function show(pengajuanlembur $lembur)
+    public function show(Pengajuanlembur $lembur)
     {
         $data['lembur'] = $lembur;
         return view('jnelembur::junior-supervisior.pengajuan-masuk.show', $data);
     }
 
 
-    public function update(UpdatePengajuanRequest $request, pengajuanlembur $lembur)
+    public function update(UpdatePengajuanRequest $request, Pengajuanlembur $lembur)
     {
         $lembur->status = 221;
         $lembur->keterangan = 'pengajuan lembur di terima, dan surat perintah';
@@ -74,7 +74,7 @@ class PengajuanLemburMasukController extends Controller
 
     }
 
-    public function tolak(pengajuanlembur $lembur)
+    public function tolak(Pengajuanlembur $lembur)
     {
         $lembur->status = 222;
         $lembur->keterangan = 'pengajuan lembur di tolak junior supervisor';
